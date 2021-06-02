@@ -1,0 +1,36 @@
+port: 11451
+socks-port: 11452
+redir-port: 11453
+allow-lan: false
+mode: rule
+log-level: silent
+external-controller: '0.0.0.0:9090'
+secret: ''
+proxies:
+  -
+    name: '大陆节点'
+    type: ss
+    server: server-ip
+    port: your-port
+    cipher: your-cipher
+    password: 'your-password'
+proxy-groups:
+  -
+    name: 🍺BILIBILI
+    type: select
+    proxies:
+      - DIRECT
+      - '大陆节点'
+  -
+    name: ⚓️其他流量
+    type: select
+    proxies:
+      - DIRECT
+
+rules:
+# > BILIBILI
+- DOMAIN-SUFFIX,biliapi.com,🍺BILIBILI
+- DOMAIN-SUFFIX,bilibili.com,🍺BILIBILI
+- DOMAIN,core.bilivideo.com,🍺BILIBILI
+
+- MATCH,⚓️其他流量
