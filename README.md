@@ -72,12 +72,15 @@ wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG
 点开Connections栏目，选择按照Upload Speed来排序，点击上下箭头两次，这时候应该会见到一个往某个ip的1935端口上传的流量记录，并且流量类型为UDP，代理模式为DIRECT（这个时候为正常的RTMP over QUIC直播模式）。
 
 ## 4.常见问题
+Q1：无法解锁番剧
 
-Q1：番剧可以看，但是直播姬不行。
+A1:检查节点配置以及是否打开system proxy。
 
-A1：检查TAP Device和Serivice Mode相关的驱动是否安装成功，并且检查系统网络设备里的cfw-tap虚拟网卡是否正常工作。![image](https://user-images.githubusercontent.com/47912037/120677819-d1667700-c4da-11eb-808d-bf0eca51ca02.png)
+Q2：番剧可以看，但是直播姬不行。
 
-Q2：🐦
+A2：检查TAP Device和Serivice Mode相关的驱动是否安装成功，并且检查系统网络设备里的cfw-tap虚拟网卡是否正常工作。![image](https://user-images.githubusercontent.com/47912037/120677819-d1667700-c4da-11eb-808d-bf0eca51ca02.png)
+
+Q3：🐦
 
 
 
