@@ -47,6 +47,6 @@ rules:
 # > BILIBILI
 - DOMAIN-SUFFIX,biliapi.com,🍺BILIBILI
 - DOMAIN-SUFFIX,bilibili.com,🍺BILIBILI
-- DOMAIN,core.bilivideo.com,🍺BILIBILI
+- DOMAIN,core.bilivideo.com,🍺BILIBILI #直播姬验证域名
 
 - MATCH,⚓️其他流量
