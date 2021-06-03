@@ -13,7 +13,7 @@ dns:
        - 1.1.1.1
        - 8.8.8.8
      ipv6: false
-     enhanced-mode: redir-host
+     enhanced-mode: fake-ip
      nameserver:
        - 1.1.1.1
        - 8.8.8.8
