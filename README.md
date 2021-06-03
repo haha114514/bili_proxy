@@ -53,10 +53,30 @@ wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG
 下载文件夹中的temp.yaml，按照上一步你自己设置的密码，端口，加密方式来修改节点的配置。如果是按照上一步提供的步骤提供的范例，应该设置成如下图。（server后面填入你国内服务器的ip，port为你设置的端口，cipher则为你选择的加密方式，password为你设置的密码。注意，这里只有password的参数需要加上两边的引号）
 ![image](https://user-images.githubusercontent.com/47912037/120562330-881a1700-c449-11eb-9c40-1300c51a1588.png)
 
+## 3.安装clash并导入编辑好的配置文件
 
-先写到这里，后面继续鸽
+下载并安装最新版的*   [clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/releases) 。
 
-## 3.测试直播
+打开软件，点选General，依次安装TAP Device和Service Mode，并打开system proxy。![image](https://user-images.githubusercontent.com/47912037/120676642-9748a580-c4d9-11eb-899b-e8b1e0167437.png)
+![image](https://user-images.githubusercontent.com/47912037/120676708-a9c2df00-c4d9-11eb-931b-e943ccb99405.png)
+
+点选Profile，并通过import按钮导入刚才编辑好的yaml文件。![image](https://user-images.githubusercontent.com/47912037/120676876-d37c0600-c4d9-11eb-8a98-a108d85cd7ce.png)
+
+导入完毕之后，点选proxies，点开BILIBILI规则，选择我们刚才添加的“大陆节点”。![image](https://user-images.githubusercontent.com/47912037/120677038-02927780-c4da-11eb-9521-e0cc57c21128.png)
+
+测试是否可以观看哔哩哔哩大陆限定番剧。
+
+打开直播姬测试是否可以正常开播以及推流。![image](https://user-images.githubusercontent.com/47912037/120677357-543b0200-c4da-11eb-8d5f-67e7e532293b.png)
+点开Connections栏目，选择按照Upload Speed来排序，点击上下箭头两次，这时候应该会见到一个往某个ip的1935端口上传的流量记录，并且流量类型为UDP，代理模式为DIRECT。
+
+## 4.常见问题
+
+Q1：番剧可以看，但是直播姬不行。
+
+A1：检查TAP Device和Serivice Mode相关的驱动是否安装成功，并且检查系统网络设备里的cfw-tap虚拟网卡是否正常工作。![image](https://user-images.githubusercontent.com/47912037/120677819-d1667700-c4da-11eb-808d-bf0eca51ca02.png)
+
+Q2：🐦
+
 
 
 
