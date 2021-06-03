@@ -6,6 +6,22 @@ mode: rule
 log-level: silent
 external-controller: '0.0.0.0:9090'
 secret: ''
+dns:
+     enable: true
+     listen: :53
+     default-nameserver:
+       - 1.1.1.1
+       - 8.8.8.8
+     ipv6: false
+     enhanced-mode: redir-host
+     nameserver:
+       - 1.1.1.1
+       - 8.8.8.8
+     fallback:
+       - 8.8.8.8
+       - 1.1.1.1
+       - https://public.dns.iij.jp/dns-query
+       
 proxies:
   -
     name: '大陆节点'
