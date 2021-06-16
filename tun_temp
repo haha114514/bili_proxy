@@ -1,0 +1,50 @@
+port: 11451
+socks-port: 11452
+redir-port: 11453
+allow-lan: false
+mode: rule
+log-level: silent
+external-controller: '0.0.0.0:9090'
+secret: ''
+dns:
+  enable: true
+  enhanced-mode: redir-host
+  nameserver:
+    - 8.8.8.8 
+    - 114.114.114.114
+tun:
+  enable: true
+  stack: gvisor 
+  dns-hijack:
+    - 198.18.0.2:53
+  auto-route: true
+  auto-detect-interface: true 
+       
+proxies:
+  -
+    name: '大陆节点'
+    type: ss
+    server: server-ip
+    port: your-port
+    cipher: your-cipher
+    password: 'your-password'
+proxy-groups:
+  -
+    name: 🍺BILIBILI
+    type: select
+    proxies:
+      - DIRECT
+      - '大陆节点'
+  -
+    name: ⚓️其他流量
+    type: select
+    proxies:
+      - DIRECT
+
+rules:
+# > BILIBILI
+- DOMAIN-SUFFIX,biliapi.com,🍺BILIBILI
+- DOMAIN-SUFFIX,bilibili.com,🍺BILIBILI
+- DOMAIN,core.bilivideo.com,🍺BILIBILI #直播姬验证域名
+
+- MATCH,⚓️其他流量
