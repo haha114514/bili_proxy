@@ -73,7 +73,7 @@ wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG
 测试是否可以观看哔哩哔哩大陆限定番剧。
 
 打开直播姬测试是否可以正常开播以及推流。![image](https://user-images.githubusercontent.com/47912037/120677357-543b0200-c4da-11eb-8d5f-67e7e532293b.png)
-点开Connections栏目，选择按照Upload Speed来排序，点击上下箭头两次，这时候应该会见到一个往某个ip的1935端口上传的流量记录，并且流量类型为UDP，代理模式为DIRECT（这个时候为正常的RTMP over QUIC直播模式）。
+点开Connections栏目，选择按照Upload Speed来排序，点击上下箭头两次，这时候应该会见到一个往某个ip的1935端口上传的流量记录，并且流量类型为UDP，代理模式为DIRECT（这个时候为正常的SRT直播模式）。
 
 ## 4.常见问题
 Q1：无法解锁番剧
