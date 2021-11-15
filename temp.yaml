@@ -45,8 +45,10 @@ proxy-groups:
 
 rules:
 # > BILIBILI
+- DOMAIN-SUFFIX,www.bilibili.com,🍺BILIBILI
+- DOMAIN-SUFFIX,api.live.bilibili.com,🍺BILIBILI #网页开播域名
 - DOMAIN-SUFFIX,biliapi.com,🍺BILIBILI
-- DOMAIN-SUFFIX,bilibili.com,🍺BILIBILI
+- DOMAIN-SUFFIX,api.bilibili.com,🍺BILIBILI
 - DOMAIN,core.bilivideo.com,🍺BILIBILI #直播姬验证域名
 
 - MATCH,⚓️其他流量
