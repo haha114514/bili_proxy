@@ -13,7 +13,7 @@
 
 本次教程采用腾讯云上海免费升级的2C4G8M服务器举例，搭建shadowsocks代理，并编写clash配置文件，来代理b站网页和直播姬的验证ip地址。
 
-请勿用国内服务器做任何违反中华人民共和国相关法律的行为。
+请勿使用中国大陆境内服务器做任何违反中华人民共和国相关法律的行为。
 
 ## 参考配置
 
@@ -47,7 +47,7 @@ wget http://sh.nekoneko.cloud/tools.sh -O tools.sh && bash tools.sh
 
 ## 1.	安装Shadowsocks
 
-这里建议使用这个一键脚本，并且有国内镜像，方便国内机器安装。
+这里建议使用KANIKIG一键脚本，并且有国内镜像，方便国内机器安装。
 
 wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 
