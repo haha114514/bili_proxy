@@ -47,7 +47,7 @@ wget http://sh.nekoneko.cloud/tools.sh -O tools.sh && bash tools.sh
 
 ## 1.	安装Shadowsocks
 
-这里建议使用KANIKIG一键脚本，并且有国内镜像，方便国内机器安装。
+这里建议使用KANIKIG编写的GOST一键脚本，并且有国内镜像，方便国内机器安装。
 
 wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 
